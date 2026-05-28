@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Agro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">O Equilíbrio</a></li>
+                <li><a href="#defensivos">Defensivos Ecológicos</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <a href="#defensivos" class="btn">Conhecer Defensivos Ecológicos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2>O Equilíbrio entre Produção e Meio Ambiente</h2>
+        <p class="subtitle">Como produzir alimentos para o mundo respeitando os limites do nosso planeta?</p>
+        <div class="grid-2">
+            <div>
+                <h3>Agro Forte</h3>
+                <p>A agricultura moderna utiliza tecnologia de ponta, inteligência artificial e manejo correto do solo para garantir recordes de safra, alimentando a população e movendo a economia.</p>
+            </div>
+            <div>
+                <h3>Futuro Sustentável</h3>
+                <p>Não há futuro sem conservação. Práticas agrícolas sustentáveis protegem os recursos hídricos, reduzem a pegada de carbono e mantêm o solo fértil para as próximas gerações.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="defensivos" class="bg-light">
+        <div class="container">
+            <h2>Defensivos Ecológicos: A Revolução Verde</h2>
+            <p class="subtitle">Alternativas naturais para proteger a lavoura sem agredir os polinizadores e o solo.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-bug icon"></i>
+                    <h3>Controle Biológico</h3>
+                    <p>Uso de inimigos naturais (como joaninhas ou vespas) para combater pragas de forma natural, sem resíduos químicos.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-leaf icon"></i>
+                    <h3>Extratos Botânicos</h3>
+                    <p>Defensivos feitos à base de plantas (como o óleo de Neem), que repelem insetos indesejados sem contaminar os alimentos.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-flask icon"></i>
+                    <h3>Bioinsumos/Microrganismos</h3>
+                    <p>Uso de bactérias e fungos do bem que fortalecem as raízes das plantas e combatem doenças de forma ecológica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="container">
+        <h2>Simulador de Impacto Ambiental</h2>
+        <p class="subtitle">Escolha o tipo de manejo e veja a pontuação de sustentabilidade da sua fazenda.</p>
+        
+        <div class="simulador-box">
+            <label for="manejo">Escolha o tipo de Defensivo:</label>
+            <select id="manejo">
+                <option value="quimico">Defensivo Químico Tradicional (Alta Toxicidade)</option>
+                <option value="misto">Manejo Integrado (Químico + Biológico)</option>
+                <option value="ecologico">Defensivo Ecológico / Bioinsumos</option>
+            </select>
+            <button onclick="calcularImpacto()">Simular Resultado</button>
+
+            <div id="resultado" class="resultado-oculto">
+                <h3 id="resultado-titulo"></h3>
+                <p id="resultado-texto"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Concurso Agrinho. Desenvolvido com foco na Sustentabilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
